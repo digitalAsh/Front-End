@@ -31,6 +31,7 @@ class MainPage extends React.Component {
     return (
       <div className="main">
         <h1> Satellite Storage </h1>
+        <button onClick={this.toForm}> Create Note</button>
         {this.props.notes.length === 0 ? (
           <h1> Nothing Stored In Satellite!!</h1>
         ) : (
@@ -48,7 +49,6 @@ class MainPage extends React.Component {
             })}
           </div>
         )}
-        <button onClick={this.toForm}> Create Note</button>
         {/* <PlusCircle onClick={this.toForm} color="white"></PlusCircle> */}
       </div>
     );

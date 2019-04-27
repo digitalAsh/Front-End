@@ -1,18 +1,25 @@
 import React from "react";
 import { connect } from "react-redux";
+import moment from 'moment';
 
 class NoteForm extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      text: ""
+      newNote: {
+        text: '',
+        created_at: moment().format('MMMM Do YYYY'),
+        storage: 1
+      }
     };
   }
 
   handleInput = e => {
-    e.preventDefault();
-    this.setState({ [e.target.name]: e.target.value });
+    e.persist();
+    this.setState(prevState => ({
+      newNote: { ...prevState.newNote, [e.target.name]: e.target.value }
+    }));
   };
 
   addNote = e => {
@@ -36,6 +43,24 @@ class NoteForm extends React.Component {
           name="text"
           onChange={this.handleInput}
         />
+          <div className="select-box">
+          <h3> Days To Store In Satellite: </h3>
+          <select
+            name="storage"
+            onChange={this.handleInput}
+            value={this.state.newNote.storage}
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+        </div>
         <div className="storage-btn">
           <button> Blackhole </button>
           <button onClick={this.addNote}> Store In Satellite</button>

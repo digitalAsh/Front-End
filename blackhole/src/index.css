@@ -21,6 +21,9 @@ p {
   color: white;
 }
 
+
+/* Nav Bar Styling */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -55,6 +58,10 @@ nav {
   text-decoration: none;
   color: white;
 }
+
+
+
+/*  SignUp styling */
 
 .sign-flex {
   display: flex;
@@ -92,6 +99,10 @@ nav {
   background: rgba(42, 42, 42, 0.5);
 }
 
+
+
+/*  Login Styling */
+
 .login {
   display: flex;
   flex-direction: column;
@@ -104,6 +115,10 @@ nav {
   margin: 0 auto;
   margin-top: 245px;
 }
+
+
+
+/* Form Styling */
 
 form {
   display: flex;
@@ -147,6 +162,9 @@ button {
   text-align: center;
 }
 
+
+/* NoteForm Component Styling */
+
 .note-form {
   display: flex;
   justify-content: center;
@@ -172,6 +190,38 @@ textarea {
   outline: none;
   color: white;
 }
+
+
+.select-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  background: rgba(42, 42, 42, 0.5);
+  color: white;
+  padding: 12px;
+  width: 100px;
+  border: 1px solid #e64944;
+  font-size: 20px;
+  -webkit-appearance: button;
+  appearance: button;
+  outline: none;
+  margin-top: 5px;
+  content: "\f13a";
+  font-family: FontAwesome;
+  cursor: pointer;
+}
+
+select:hover {
+  filter: brightness(150%);
+}
+
+
+
+/* Notes Styling */
 
 .notes {
   display: flex;
@@ -218,3 +268,7 @@ textarea {
   justify-content: space-evenly;
   min-width: 700px;
 }
+
+
+
+
