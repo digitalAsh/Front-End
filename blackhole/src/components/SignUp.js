@@ -84,23 +84,4 @@ export default class SignUp extends React.Component {
   }
 }
 
-/* <MuiThemeProvider theme={theme}>
-            <TextField
-              onChange={this.handleInput}
-              value={this.state.regcreds.regname}
-              name="regname"
-              type="text"
-              label="Name"
-              id="mui-theme-provider-standard-input"
- 
-            />
-            <TextField
-              onChange={this.handleInput}
-              value={this.state.regcreds.regpassword}
-              name="regpassword"
-              type="password"
-              label="Password"
-              id="mui-theme-provider-standard-input"
-              className="input"
-            />
-          </MuiThemeProvider> */
+

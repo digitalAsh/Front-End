@@ -39,9 +39,9 @@ export const getData = () => dispatch => {
 
 // used to delete a note by taking in it's id
 
-export const DELETE_START = "FETCH_DATA_START";
-export const DELETE_SUCCESS = "FETCH_DATA_SUCCESS";
-export const DELETE_FAILURE = "FETCH_DATA_FAILURE";
+export const DELETE_START = "DELETE_START";
+export const DELETE_SUCCESS = "DELETE_SUCCESS";
+export const DELETE_FAILURE = "DELETE_AILURE";
 
 export const deleteNotes = id => dispatch => {
   dispatch({ type: DELETE_START });

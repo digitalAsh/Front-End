@@ -48,6 +48,7 @@ import {
         delete_at: "day and time of automatic deletion"
       }
     ],
+    users: [],
     loggingIn: false,
     // token: localStorage.getItem("token"),
     token: true,
